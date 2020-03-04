@@ -5,7 +5,8 @@ import re
 import autoslug
 import pytz
 
-from django.utils.encoding import python_2_unicode_compatible
+#from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible #For django 3.0.3 compatibility
 
 from django.db import models
 from django.db.models import lookups
